@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Judul halaman Register -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:id="@+id/register"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Input fields untuk username, email, phone, dan password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Username"
+            android:paddingVertical="5dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/ETUsername"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Email"
+            android:paddingVertical="5dp"
+            android:id="@+id/ETEMail"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Phone"
+            android:paddingVertical="5dp"
+            android:id="@+id/ETPhone"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text=""
+            android:paddingVertical="5dp"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:id="@+id/ETPassword"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <!-- Persetujuan Terms and Conditions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By checking the box you agree to our"
+                android:id="@+id/checkbox"
+                android:textSize="9dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text=" Terms "
+                android:textColor="#0000FF"
+                android:id="@+id/termsBiru"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text="and"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9dp"
+                android:text=" Condition"
+                android:textColor="#0000FF"
+                android:id="@+id/conditionBiru"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+        <!-- Tombol Register -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <!-- Tautan untuk masuk jika sudah punya akun -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="11dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#0000FF"
+                android:textSize="11dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

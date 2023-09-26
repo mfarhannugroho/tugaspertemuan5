@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <!-- Judul halaman Homepage -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Homepage"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp">
+    </TextView>
+
+    <!-- Baris untuk menyambut pengguna -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="25dp">
+
+        <!-- Label "Welcome" -->
+        <TextView
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome "
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+
+        <!-- Menampilkan nama pengguna -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:id="@+id/txt_username"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+    </LinearLayout>
+
+    <!-- Baris untuk menampilkan email pengguna -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp">
+
+        <!-- Label "your email" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="your email "
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+
+        <!-- Menampilkan alamat email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:id="@+id/txt_email"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+
+        <!-- Menampilkan pesan "has been registered" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" has been registered"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+    </LinearLayout>
+
+    <!-- Baris untuk menampilkan nomor telepon pengguna -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp">
+
+        <!-- Label "your phone" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="your phone "
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+
+        <!-- Menampilkan nomor telepon -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:id="@+id/txt_phone"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+
+        <!-- Menampilkan pesan "has been registered" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" has been registered"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp">
+        </TextView>
+    </LinearLayout>
+
+    <!-- Tombol Logout -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:id="@+id/btn_logout">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
